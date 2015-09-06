@@ -3,7 +3,6 @@
  *
  * Gesture Detection Libray
  * By Bobby Yang
-
  */
 
 //Gestures
@@ -20,13 +19,13 @@ var timeOfFrame = 0;
 var defaultTimeDifference = 3000;
 var defaultDebug = true;
 var options = null;
-//initialize accelerometerlibrary
+//intialise AcellerometerLibary
 var Accel = require('ui/accel');
 var cachedFrameArray =[];
 var stepArray = [];
 var maxLengthGes = 0;
 
-//Create Library Object
+//Create Libary Object
 function init(opts){
    options = opts || {}; 
    options.debug = opts.debug || defaultDebug;
@@ -34,7 +33,7 @@ function init(opts){
    options.gestures = opts.gestures || gesture;
 }
 
-//Get Values for Accelerometer
+//Get Values for Acelerometer
 function startDetection(e){
    var frameArray = [];
    maximumGestureLength();
